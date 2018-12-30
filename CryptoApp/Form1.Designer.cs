@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.PluginComboBox = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.SaveToXmlButton = new System.Windows.Forms.Button();
             this.LoadFromXml = new System.Windows.Forms.Button();
@@ -37,14 +37,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // PluginComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(71, 12);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(235, 21);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.PluginComboBox.FormattingEnabled = true;
+            this.PluginComboBox.Location = new System.Drawing.Point(71, 12);
+            this.PluginComboBox.Name = "PluginComboBox";
+            this.PluginComboBox.Size = new System.Drawing.Size(235, 21);
+            this.PluginComboBox.TabIndex = 0;
+            this.PluginComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // dataGridView1
             // 
@@ -103,7 +103,7 @@
             this.Controls.Add(this.LoadFromXml);
             this.Controls.Add(this.SaveToXmlButton);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.PluginComboBox);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
@@ -118,7 +118,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox PluginComboBox;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button SaveToXmlButton;
         private System.Windows.Forms.Button LoadFromXml;

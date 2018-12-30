@@ -16,6 +16,7 @@ namespace CryptoApp
         public Form1()
         {
             InitializeComponent();
+            PluginComboBox.DataSource = new PluginLoader().GetPlugins();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
