@@ -1,0 +1,9 @@
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.ClassLib\bin\Debug\netstandard2.0\CryptoApp.ClassLib.deps.json
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.ClassLib\bin\Debug\netstandard2.0\CryptoApp.ClassLib.dll
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.ClassLib\bin\Debug\netstandard2.0\CryptoApp.ClassLib.pdb
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.ClassLib\obj\Debug\netstandard2.0\CryptoApp.ClassLib.csprojAssemblyReference.cache
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.ClassLib\obj\Debug\netstandard2.0\CryptoApp.ClassLib.csproj.CoreCompileInputs.cache
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.ClassLib\obj\Debug\netstandard2.0\CryptoApp.ClassLib.AssemblyInfoInputs.cache
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.ClassLib\obj\Debug\netstandard2.0\CryptoApp.ClassLib.AssemblyInfo.cs
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.ClassLib\obj\Debug\netstandard2.0\CryptoApp.ClassLib.dll
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.ClassLib\obj\Debug\netstandard2.0\CryptoApp.ClassLib.pdb

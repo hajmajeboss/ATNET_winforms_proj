@@ -1,0 +1,14 @@
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp\bin\Debug\CryptoApp.exe.config
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp\bin\Debug\CryptoApp.exe
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp\bin\Debug\CryptoApp.pdb
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp\obj\Debug\CryptoApp.csprojAssemblyReference.cache
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp\obj\Debug\CryptoApp.Form1.resources
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp\obj\Debug\CryptoApp.Properties.Resources.resources
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp\obj\Debug\CryptoApp.csproj.GenerateResource.cache
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp\obj\Debug\CryptoApp.csproj.CoreCompileInputs.cache
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp\obj\Debug\CryptoApp.exe
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp\obj\Debug\CryptoApp.pdb
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp\obj\Debug\CryptoApp.csproj.CopyComplete

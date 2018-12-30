@@ -1,0 +1,12 @@
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Litecoin\bin\Debug\netstandard2.0\CryptoApp.Litecoin.deps.json
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Litecoin\bin\Debug\netstandard2.0\CryptoApp.Litecoin.dll
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Litecoin\bin\Debug\netstandard2.0\CryptoApp.ClassLib.dll
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Litecoin\bin\Debug\netstandard2.0\CryptoApp.ClassLib.pdb
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Litecoin\obj\Debug\netstandard2.0\CryptoApp.Litecoin.csproj.CoreCompileInputs.cache
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Litecoin\obj\Debug\netstandard2.0\CryptoApp.Litecoin.AssemblyInfoInputs.cache
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Litecoin\obj\Debug\netstandard2.0\CryptoApp.Litecoin.AssemblyInfo.cs
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Litecoin\obj\Debug\netstandard2.0\CryptoApp.Litecoin.csproj.CopyComplete
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Litecoin\obj\Debug\netstandard2.0\CryptoApp.Litecoin.csprojAssemblyReference.cache
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Litecoin\bin\Debug\netstandard2.0\CryptoApp.Litecoin.pdb
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Litecoin\obj\Debug\netstandard2.0\CryptoApp.Litecoin.dll
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Litecoin\obj\Debug\netstandard2.0\CryptoApp.Litecoin.pdb

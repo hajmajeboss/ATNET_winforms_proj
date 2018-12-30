@@ -1,0 +1,12 @@
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Bitcoin\bin\Debug\netstandard2.0\CryptoApp.ClassLib.dll
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Bitcoin\obj\Debug\netstandard2.0\CryptoApp.Bitcoin.csprojAssemblyReference.cache
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Bitcoin\obj\Debug\netstandard2.0\CryptoApp.Bitcoin.csproj.CoreCompileInputs.cache
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Bitcoin\obj\Debug\netstandard2.0\CryptoApp.Bitcoin.AssemblyInfoInputs.cache
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Bitcoin\obj\Debug\netstandard2.0\CryptoApp.Bitcoin.AssemblyInfo.cs
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Bitcoin\bin\Debug\netstandard2.0\CryptoApp.Bitcoin.deps.json
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Bitcoin\bin\Debug\netstandard2.0\CryptoApp.Bitcoin.dll
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Bitcoin\bin\Debug\netstandard2.0\CryptoApp.ClassLib.pdb
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Bitcoin\obj\Debug\netstandard2.0\CryptoApp.Bitcoin.csproj.CopyComplete
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Bitcoin\bin\Debug\netstandard2.0\CryptoApp.Bitcoin.pdb
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Bitcoin\obj\Debug\netstandard2.0\CryptoApp.Bitcoin.dll
+C:\Users\hajma\source\repos\CryptoApp\CryptoApp.Bitcoin\obj\Debug\netstandard2.0\CryptoApp.Bitcoin.pdb
