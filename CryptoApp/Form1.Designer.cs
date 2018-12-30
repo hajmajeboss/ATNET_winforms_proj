@@ -63,7 +63,7 @@
             this.SaveToXmlButton.TabIndex = 2;
             this.SaveToXmlButton.Text = "Save to XML";
             this.SaveToXmlButton.UseVisualStyleBackColor = true;
-            this.SaveToXmlButton.Click += new System.EventHandler(this.button1_Click);
+            this.SaveToXmlButton.Click += new System.EventHandler(this.SaveToXmlButton_Click);
             // 
             // LoadFromXml
             // 
@@ -73,7 +73,7 @@
             this.LoadFromXml.TabIndex = 3;
             this.LoadFromXml.Text = "Load from XML";
             this.LoadFromXml.UseVisualStyleBackColor = true;
-            this.LoadFromXml.Click += new System.EventHandler(this.button1_Click_1);
+            this.LoadFromXml.Click += new System.EventHandler(this.LoadFromXmlButton_Click);
             // 
             // CurrencyLabel
             // 

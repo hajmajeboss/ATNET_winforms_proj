@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace CryptoApp
 {
@@ -22,36 +23,30 @@ namespace CryptoApp
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void SaveToXmlButton_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             saveFileDialog1.Filter = "XML File|*.xml";
             saveFileDialog1.Title = "Save an XML File";
             saveFileDialog1.ShowDialog();
 
-            // If the file name is not an empty string open it for saving.  
             if (saveFileDialog1.FileName != "")
             {
-                // Saves the Image via a FileStream created by the OpenFile method.  
                 System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog1.OpenFile();
-               
+
                 fs.Close();
             }
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void LoadFromXmlButton_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Filter = "XML Files|*.xml";
             openFileDialog1.Title = "Select a XML File";
 
-            // Show the Dialog.  
-            // If the user clicked OK in the dialog and  
-            // a .CUR file was selected, open it.  
             if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                // Assign the cursor in the Stream to the Form's Cursor property.  
-                //   this.Cursor = new Cursor(openFileDialog1.OpenFile());
+
             }
         }
 
@@ -59,5 +54,6 @@ namespace CryptoApp
         {
 
         }
+
     }
 }
