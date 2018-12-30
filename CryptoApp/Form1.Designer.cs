@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.PluginComboBox = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.CurrencyRateGrid = new System.Windows.Forms.DataGridView();
             this.SaveToXmlButton = new System.Windows.Forms.Button();
             this.LoadFromXml = new System.Windows.Forms.Button();
             this.CurrencyLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CurrencyRateGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // PluginComboBox
@@ -46,14 +46,14 @@
             this.PluginComboBox.TabIndex = 0;
             this.PluginComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // dataGridView1
+            // CurrencyRateGrid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 64);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(290, 340);
-            this.dataGridView1.TabIndex = 1;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.CurrencyRateGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CurrencyRateGrid.Location = new System.Drawing.Point(16, 64);
+            this.CurrencyRateGrid.Name = "CurrencyRateGrid";
+            this.CurrencyRateGrid.Size = new System.Drawing.Size(290, 340);
+            this.CurrencyRateGrid.TabIndex = 1;
+            this.CurrencyRateGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // SaveToXmlButton
             // 
@@ -102,7 +102,7 @@
             this.Controls.Add(this.CurrencyLabel);
             this.Controls.Add(this.LoadFromXml);
             this.Controls.Add(this.SaveToXmlButton);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.CurrencyRateGrid);
             this.Controls.Add(this.PluginComboBox);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -110,7 +110,7 @@
             this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "CryptoApp";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CurrencyRateGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,7 +119,7 @@
         #endregion
 
         private System.Windows.Forms.ComboBox PluginComboBox;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView CurrencyRateGrid;
         private System.Windows.Forms.Button SaveToXmlButton;
         private System.Windows.Forms.Button LoadFromXml;
         private System.Windows.Forms.Label CurrencyLabel;

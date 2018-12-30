@@ -1,7 +1,9 @@
-﻿using System;
+﻿using CryptoApp.ClassLib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -53,7 +55,29 @@ namespace CryptoApp
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            ComboBox combo = (ComboBox)sender;
+            Plugin selected = (Plugin)combo.SelectedItem;
 
+            try
+            {
+                PluginLoader loader = new PluginLoader();
+                Currency curr = loader.LoadPlugin(selected).GetCurrencyData();
+                List<CurrencyNameRate> list = new List<CurrencyNameRate>();
+                list.Add(new CurrencyNameRate { Code = "EUR", Rate = curr.EUR });
+                list.Add(new CurrencyNameRate { Code = "BTC", Rate = curr.BTC });
+                list.Add(new CurrencyNameRate { Code = "USD", Rate = curr.USD });
+                list.Add(new CurrencyNameRate { Code = "CNY", Rate = curr.CNY });
+                list.Add(new CurrencyNameRate { Code = "JPY", Rate = curr.JPY });
+                list.Add(new CurrencyNameRate { Code = "CZK", Rate = curr.CZK });
+                list.Add(new CurrencyNameRate { Code = "GBP", Rate = curr.GBP });
+                CurrencyRateGrid.DataSource = list;
+            }
+            catch (InvalidPluginException ipe)
+            {
+                Trace.WriteLine(ipe.Message + " " + ipe.plugin);
+                Debug.WriteLine(ipe.Message + " " + ipe.plugin);
+                MessageBox.Show(ipe.plugin + " is not a valid CryptoApp plugin.", "Error");
+            }
         }
 
     }
