@@ -33,7 +33,7 @@
             this.SaveToXmlButton = new System.Windows.Forms.Button();
             this.LoadFromXml = new System.Windows.Forms.Button();
             this.CurrencyLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.CodeLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.CurrencyRateGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,9 +48,26 @@
             // 
             // CurrencyRateGrid
             // 
+            this.CurrencyRateGrid.AllowUserToAddRows = false;
+            this.CurrencyRateGrid.AllowUserToDeleteRows = false;
+            this.CurrencyRateGrid.AllowUserToResizeColumns = false;
+            this.CurrencyRateGrid.AllowUserToResizeRows = false;
+            this.CurrencyRateGrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CurrencyRateGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.CurrencyRateGrid.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.CurrencyRateGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.CurrencyRateGrid.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.CurrencyRateGrid.Location = new System.Drawing.Point(16, 64);
+            this.CurrencyRateGrid.MultiSelect = false;
             this.CurrencyRateGrid.Name = "CurrencyRateGrid";
+            this.CurrencyRateGrid.ReadOnly = true;
+            this.CurrencyRateGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.CurrencyRateGrid.RowHeadersVisible = false;
+            this.CurrencyRateGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.CurrencyRateGrid.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.CurrencyRateGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.CurrencyRateGrid.ShowEditingIcon = false;
             this.CurrencyRateGrid.Size = new System.Drawing.Size(290, 340);
             this.CurrencyRateGrid.TabIndex = 1;
             this.CurrencyRateGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -84,21 +101,21 @@
             this.CurrencyLabel.TabIndex = 4;
             this.CurrencyLabel.Text = "Currency:";
             // 
-            // label2
+            // CodeLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Code: XYZ";
+            this.CodeLabel.AutoSize = true;
+            this.CodeLabel.Location = new System.Drawing.Point(13, 39);
+            this.CodeLabel.Name = "CodeLabel";
+            this.CodeLabel.Size = new System.Drawing.Size(59, 13);
+            this.CodeLabel.TabIndex = 5;
+            this.CodeLabel.Text = "Code: XYZ";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(322, 450);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.CodeLabel);
             this.Controls.Add(this.CurrencyLabel);
             this.Controls.Add(this.LoadFromXml);
             this.Controls.Add(this.SaveToXmlButton);
@@ -123,7 +140,7 @@
         private System.Windows.Forms.Button SaveToXmlButton;
         private System.Windows.Forms.Button LoadFromXml;
         private System.Windows.Forms.Label CurrencyLabel;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label CodeLabel;
     }
 }
 

@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,8 @@ namespace CryptoApp
 {
     public partial class Form1 : Form
     {
+        Currency curr;
+
         public Form1()
         {
             InitializeComponent();
@@ -30,14 +33,27 @@ namespace CryptoApp
         {
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             saveFileDialog1.Filter = "XML File|*.xml";
-            saveFileDialog1.Title = "Save an XML File";
+            saveFileDialog1.Title = "Save to XML File";
             saveFileDialog1.ShowDialog();
 
             if (saveFileDialog1.FileName != "")
             {
                 System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog1.OpenFile();
 
+                var serializer = new CurrencyToXmlSerializer();
+                if (curr != null)
+                {
+                    serializer.SerializeToStream(curr, fs);
+                }
                 fs.Close();
+                if (curr != null)
+                {
+                    MessageBox.Show("Successfully saved.", "Save to XML file");
+                }
+                else
+                {
+                    MessageBox.Show("An error occured while saving.", "Save to XML file");
+                }
             }
         }
 
@@ -49,6 +65,13 @@ namespace CryptoApp
 
             if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
+                FileStream fs = (FileStream)openFileDialog1.OpenFile();
+                var deserializer = new XmlToCurrencyDeserializer();
+                curr = deserializer.DeserializeFromStream(fs);
+                CurrencyRateGrid.DataSource = GenerateCurrencyRatesList();
+                CodeLabel.Text = "Code: " + curr.Name;
+
+                PluginComboBox.Text = "from XML";
 
             }
         }
@@ -61,16 +84,9 @@ namespace CryptoApp
             try
             {
                 PluginLoader loader = new PluginLoader();
-                Currency curr = loader.LoadPlugin(selected).GetCurrencyData();
-                List<CurrencyNameRate> list = new List<CurrencyNameRate>();
-                list.Add(new CurrencyNameRate { Code = "EUR", Rate = curr.EUR });
-                list.Add(new CurrencyNameRate { Code = "BTC", Rate = curr.BTC });
-                list.Add(new CurrencyNameRate { Code = "USD", Rate = curr.USD });
-                list.Add(new CurrencyNameRate { Code = "CNY", Rate = curr.CNY });
-                list.Add(new CurrencyNameRate { Code = "JPY", Rate = curr.JPY });
-                list.Add(new CurrencyNameRate { Code = "CZK", Rate = curr.CZK });
-                list.Add(new CurrencyNameRate { Code = "GBP", Rate = curr.GBP });
-                CurrencyRateGrid.DataSource = list;
+                curr = loader.LoadPlugin(selected).GetCurrencyData();           
+                CurrencyRateGrid.DataSource = GenerateCurrencyRatesList();
+                CodeLabel.Text = "Code: " + curr.Name;
             }
             catch (InvalidPluginException ipe)
             {
@@ -80,5 +96,18 @@ namespace CryptoApp
             }
         }
 
+
+        public List<CurrencyNameRate> GenerateCurrencyRatesList()
+        {
+            List<CurrencyNameRate> list = new List<CurrencyNameRate>();
+            list.Add(new CurrencyNameRate { Code = "BTC", Rate = curr.BTC });
+            list.Add(new CurrencyNameRate { Code = "EUR", Rate = curr.EUR });
+            list.Add(new CurrencyNameRate { Code = "USD", Rate = curr.USD });
+            list.Add(new CurrencyNameRate { Code = "CNY", Rate = curr.CNY });
+            list.Add(new CurrencyNameRate { Code = "JPY", Rate = curr.JPY });
+            list.Add(new CurrencyNameRate { Code = "CZK", Rate = curr.CZK });
+            list.Add(new CurrencyNameRate { Code = "GBP", Rate = curr.GBP });
+            return list;
+        }
     }
 }

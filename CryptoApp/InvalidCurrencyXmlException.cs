@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace CryptoApp
 {
-    public class CurrencyNameRate
+    public class InvalidCurrencyXmlException : Exception
     {
-        public double Rate { get; set; }
-        public string Code { get; set; }
     }
 }
